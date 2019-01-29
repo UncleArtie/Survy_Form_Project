@@ -1,0 +1,58 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FCC Survey Form Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h1 id="title">My Personal Survey Form for FreeCodeCamp</h1>
+    <h2>A FreeCodeCamp Project</h2>
+    <p id="description">This is a survey form that represents the accumulated knowledge gained at this juncture in the FreeCodeCamp Responsive
+        Web Design program.</p>
+    </p>The survey will serve to register your personal preferences for a Ham Sandwich from a limited quantity of variables.
+    Please enjoy.</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">* Name: </label>
+        <input id="name" name="name" placeholder="Enter your name" type="text" required>
+        <label for="email" id="email-label">* Email Address: </label>
+        <input id="email" name="email" placeholder="Enter your email" type="email" required>
+        <label for="number" id="number-label">* Your Age: </label>
+        <input id="number" name="number" placeholder="Enter your age" type="number" min="1" max="122" required>
+        <p id="bread">Choose your bread</p>
+        <select id="dropdown" name="bread">
+            <option>Rye</option>
+            <option>Wheat</option>
+            <option>Pumpernickel</option>
+        </select>
+        <br>
+        <div id="cheese">Choose your cheese</div>
+        <div id="cheese-pick">
+            <input name="cheesegroup" type="radio" value="swiss"> Swiss
+            <br>
+            <input name="cheesegroup" type="radio" value="provolone"> Provolone
+            <br>
+            <input name="cheesegroup" type="radio" value="cheddar"> Cheddar
+            <br>
+        </div>
+
+        <div id="mayo">Do you want mayonnaise?</div>
+        <div id="mayo-pick">
+            <input name="mayogroup" value="yes" type="checkbox"> Yes
+            <input name="mayogroup" value="no" type="checkbox"> No
+            <input name="mayogroup" value="maybe" type="checkbox"> Maybe
+        </div>
+        <div id="explain">Please, tell us why you want your sandwich this way?</div>
+        <textarea id="explain-text" placeholder="Add explanation here...">
+        </textarea>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
